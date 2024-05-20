@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: arial;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.tile {
+  padding: 30px 150px 30px 150px;
+}
+
+.tile h2 {
+  margin-top: 0;
+}
+
+.head {
+  text-align: center;
+  padding: 30px 150px 20px 150px;
+}
+
+.head ul {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  padding: 0px;
+  list-style: none;
+}
+
+.head ul a {
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.head ul a:hover {
+  background-color: #2170cc;
+  color: white;
+}
+
+.head li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.tile .content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tile .text {
+  margin-top: 5%;
+  flex: 1;
+  margin-right: 50px;
+}
+
+.tile img {
+  flex: 0 0 auto;
+  width: 350px;
+}
+
+.card img {
+  width: 250px;
+  margin: 20px 45px 50px 45px;
+}
+
+.card {
+  margin-right: 30px;
+}
+
+.card a:hover {
+  opacity: 80%;
+  cursor: pointer;
+}
+
+table {
+  border: 1px solid #2170cc;
+}
+
+table,
+table th,
+table td {
+  border: 1px solid #2170cc;
+  border-collapse: collapse;
+  padding: 20px;
+}
+
+/* The below CSS code is for nav bar and footer*/
+.logo {
+  height: 70px;
+  width: 125px;
+  text-align: center;
+  padding-left: 100%;
+}
+
+nav {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 3px 3px 5px rgb(0, 0, 0, 50%);
+}
+
+nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav li {
+  list-style-type: none;
+  height: 50px;
+}
+
+nav a {
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
+  background-color: rgb(255, 255, 255);
+}
+
+nav a:hover {
+  color: white;
+  background-color: rgb(33, 112, 204, 80%);
+}
+
+nav li:first-child {
+  margin-right: auto;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rgb(255, 255, 255);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgb(0, 0, 0, 30%);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.sidebar li {
+  width: 100%;
+}
+.sidebar a {
+  width: 100%;
+}
+
+.menu-button {
+  display: none;
+  animation: slideIn 0.5s ease forwards;
+}
+
+@media (max-width: 1175px) {
+  .hideOnMobile {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+  }
+}
+
+@media (max-width: 400px) {
+  .sidebar {
+    width: 100%;
+  }
+}
+
+.footer {
+  background-color: white;
+  box-shadow: 3px -3px 5px rgb(0, 0, 0, 50%);
+  clear: both;
+  text-align: right;
+  padding-right: 70px;
+}
+
+.footer a {
+  color: black;
+  text-decoration: none;
+}

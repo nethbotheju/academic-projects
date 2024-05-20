@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Page Editor (Student 1)</title>
+    <link rel="stylesheet" href="pageEditor-styles.css" />
+    <script>
+      // Below functions are used for nav bar
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Nav bar created by student 2 -->
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26"
+              viewBox="0 -960 960 960"
+              width="24"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              /></svg
+          ></a>
+        </li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">User profile</a></li>
+        <li><a href="#">Feedback</a></li>
+        <li><a href="#">Sitemap</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">About US</a></li>
+      </ul>
+
+      <ul>
+        <li><img src="img/logo.png" alt="logo" class="logo" /></li>
+        <li class="hideOnMobile"><a href="#">Home</a></li>
+        <li class="hideOnMobile"><a href="#">Gallery</a></li>
+        <li class="hideOnMobile"><a href="#">Shop</a></li>
+        <li class="hideOnMobile"><a href="#">User profile</a></li>
+        <li class="hideOnMobile"><a href="#">Feedback</a></li>
+        <li class="hideOnMobile"><a href="#">Sitemap</a></li>
+        <li class="hideOnMobile"><a href="#">Team</a></li>
+        <li class="hideOnMobile"><a href="#">About US</a></li>
+        <li class="menu-button" onclick="showSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26"
+              viewBox="0 -960 960 960"
+              width="26"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              /></svg
+          ></a>
+        </li>
+      </ul>
+    </nav>
+    <br />
+    <h1>Page Editor</h1>
+    <br />
+
+    <div class="editor-info">
+      <h2>Name: Neth Botheju</h2>
+      <h3>Role: Student 1</h3>
+      <p>The following pages were edited by me!</p>
+      <br />
+      <a href="#bottom">Jump to bottom</a>
+    </div>
+
+    <div class="page-section">
+      <h2>Splash Screen</h2>
+      <ul>
+        <li>An image element displaying the logo in the center of the page.</li>
+        <li>Text element for displaying the mission</li>
+        <li>Text element for displaying the group members</li>
+        <li>A loading indicator element</li>
+      </ul>
+      <br />
+      <a href="splash.html">Link to Splash Screen</a>
+    </div>
+
+    <div class="page-section">
+      <h2>Shop Page</h2>
+      <ul>
+        <li>Displaying the product showcase in a three-column layout</li>
+        <li>
+          Product customization options (Ability to select color and specify
+          quantity)
+        </li>
+        <li>A shopping cart for holding selected products.</li>
+        <li>
+          A "Checkout" button within the shopping cart for initiating the
+          checkout process.
+        </li>
+      </ul>
+      <br />
+      <a href="shop.html">Link to Shop page</a>
+    </div>
+
+    <div class="page-section">
+      <h2>Checkout Page</h2>
+      <ul>
+        <li>Checkout form</li>
+        <li>Order Summary</li>
+        <li>Form Validation and Order Confirmation</li>
+      </ul>
+      <br />
+      <a href="checkout.html">Link to Checkout page</a>
+    </div>
+
+    <div class="page-section">
+      <h2>About Us page (Content page)</h2>
+      <ul>
+        <li>Divied page content in to sections</li>
+        <li>
+          Implement internal linking to that each section at the top of the page
+        </li>
+      </ul>
+      <br />
+      <a href="aboutUs.html">Link to About Us page</a>
+    </div>
+
+    <a id="bottom"></a>
+    <br />
+
+    <div class="footer">
+      <br />
+      <a href="pageEditor.html">Page Editor</a>
+      <br />
+      <br />
+    </div>
+  </body>
+</html>

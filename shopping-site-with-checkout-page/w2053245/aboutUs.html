@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="aboutUs-styles.css" />
+    <script>
+      // Below functions are used for nav bar
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Nav bar created by student 2 -->
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26"
+              viewBox="0 -960 960 960"
+              width="24"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              /></svg
+          ></a>
+        </li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">User profile</a></li>
+        <li><a href="#">Feedback</a></li>
+        <li><a href="#">Sitemap</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">About US</a></li>
+      </ul>
+
+      <ul>
+        <li><img src="img/logo.png" alt="logo" class="logo" /></li>
+        <li class="hideOnMobile"><a href="#">Home</a></li>
+        <li class="hideOnMobile"><a href="#">Gallery</a></li>
+        <li class="hideOnMobile"><a href="#">Shop</a></li>
+        <li class="hideOnMobile"><a href="#">User profile</a></li>
+        <li class="hideOnMobile"><a href="#">Feedback</a></li>
+        <li class="hideOnMobile"><a href="#">Sitemap</a></li>
+        <li class="hideOnMobile"><a href="#">Team</a></li>
+        <li class="hideOnMobile"><a href="#">About US</a></li>
+        <li class="menu-button" onclick="showSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26"
+              viewBox="0 -960 960 960"
+              width="26"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              /></svg
+          ></a>
+        </li>
+      </ul>
+    </nav>
+    <div class="head" style="background-color: rgb(33, 112, 204, 30%)">
+      <h1>About Us</h1>
+
+      <p>
+        On this page, we will provide information about us and the organizations
+        we partner with for donations, as well as our donation history from the
+        past few months.
+      </p>
+      <ul>
+        <li><a href="#about-us">About Us</a></li>
+        <li><a href="#partner-organizations">Partner Organizations</a></li>
+        <li><a href="#donate-history">Donation History</a></li>
+      </ul>
+    </div>
+
+    <div class="tile">
+      <div class="content">
+        <div class="text">
+          <h2 id="about-us">About Us</h2>
+          <br />
+          <p>
+            Our organization is a non-profit organization that sells cool stuff
+            like wristbands, reusable water bottles, keychains, etc. We donate
+            the money we raise to our partner organizations that support clean
+            water initiatives.
+          </p>
+          <br />
+          <p>
+            We mark up the price of our products by a factor of four to cover
+            our costs. For example, if a wristband costs £1 to produce, we sell
+            it for £5. This means that 80% of the proceeds from each product are
+            donated.
+          </p>
+        </div>
+        <img src="img/forever.jpg" alt="Child picture" />
+      </div>
+    </div>
+
+    <div class="tile" style="background-color: rgb(33, 112, 204, 30%)">
+      <div class="content">
+        <div class="text">
+          <h2 id="partner-organizations">Partner Organizations</h2>
+          <br />
+          <p>
+            The three organizations below are our partner organizations to which
+            we donate the money we raise. Click on each organization to be
+            redirected to its website.
+          </p>
+
+          <p>
+            <span class="card">
+              <a href="#"><img src="img/wfp.png" alt="WFP Image" /></a
+            ></span>
+            <span class="card"
+              ><a href="#"><img src="img/worg.png" alt="WORG Image" /></a
+            ></span>
+            <span class="card"
+              ><a href="#"><img src="img/twp.png" alt="TWP Image" /></a
+            ></span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="tile">
+      <div class="content">
+        <div class="text">
+          <h2 id="donate-history">Donation History</h2>
+          <br />
+          <!-- Add a table to display donate history -->
+          <table>
+            <tr>
+              <th rowspan="2">Month</th>
+              <th rowspan="2">Total Income</th>
+              <th colspan="3">Organizations</th>
+            </tr>
+            <tr>
+              <th>WFP</th>
+              <th>W ORG</th>
+              <th>TWP</th>
+            </tr>
+            <tr>
+              <td>February</td>
+              <td>&#163; 2650.50</td>
+              <td>&#163; 850.50</td>
+              <td>&#163; 900.00</td>
+              <td>&#163; 900.00</td>
+            </tr>
+            <tr>
+              <td>January</td>
+              <td>&#163; 3550.75</td>
+              <td>&#163; 1200.75</td>
+              <td>&#163; 1175.00</td>
+              <td>&#163; 1175.00</td>
+            </tr>
+            <tr>
+              <td>December</td>
+              <td>&#163; 1950.00</td>
+              <td>&#163; 600.00</td>
+              <td>&#163; 675.00</td>
+              <td>&#163; 675.00</td>
+            </tr>
+            <tr>
+              <td>November</td>
+              <td>&#163; 2350.30</td>
+              <td>&#163; 700.00</td>
+              <td>&#163; 825.30</td>
+              <td>&#163; 825.00</td>
+            </tr>
+            <tr>
+              <td>October</td>
+              <td>&#163; 3150.00</td>
+              <td>&#163; 1250.00</td>
+              <td>&#163; 650.00</td>
+              <td>&#163; 1250.00</td>
+            </tr>
+          </table>
+          <br />
+        </div>
+      </div>
+    </div>
+
+    <!-- This is the footer part -->
+    <div class="footer">
+      <br />
+      <a href="pageEditor.html">Page Editor</a>
+      <br />
+      <br />
+    </div>
+  </body>
+</html>

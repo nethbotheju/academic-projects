@@ -1,0 +1,316 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.item {
+  flex-direction: column;
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 20px;
+  width: 250px;
+  float: left;
+}
+
+.item button {
+  width: 100%;
+  height: 28px;
+  background-color: #2170cc;
+  color: white;
+  border: white 2px solid;
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+}
+
+.item h3,
+.item h4 {
+  margin: 10px 0;
+  padding: 4px;
+  text-align: left;
+}
+
+.cart {
+  margin-left: 10px;
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  padding: 15px;
+}
+
+.cart img {
+  margin-top: 8px;
+  width: 50px;
+  height: 50px;
+}
+
+.cart p {
+  margin: 0;
+  margin-top: 5px;
+  padding: 0;
+  padding-left: 15px;
+  font-size: 16px;
+  width: 170px;
+}
+
+.cart img[src="img/delete.png"] {
+  margin-top: 15px;
+  margin-left: 10px;
+  height: 30px;
+  width: 30px;
+}
+
+#checkoutBtn {
+  width: 100%;
+  height: 30px;
+  background-color: #2170cc;
+  color: white;
+  border: white 2px solid;
+}
+
+.price,
+.donation {
+  padding-left: 30px;
+}
+
+.cart-container {
+  margin-top: 10px;
+  width: 300px;
+  float: right;
+  margin-right: 80px;
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+#items {
+  width: 935px;
+  margin-left: 80px;
+  margin-bottom: 30px;
+  float: left;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.item input[type="number"] {
+  width: 32px;
+  height: 15px;
+  padding-left: 3px;
+  border: 2px #2170cc solid;
+}
+
+.item input[type="number"]:focus {
+  outline: none;
+}
+
+.item select {
+  width: 63px;
+  height: 20px;
+  border: 2px #2170cc solid;
+}
+
+.item h4 {
+  text-align: center;
+}
+
+.item label[for="color"] {
+  padding-left: 20px;
+}
+
+.amount {
+  float: right;
+}
+
+.item p {
+  margin: 0;
+  padding-left: 4px;
+  font-size: 13px;
+  height: 40px;
+}
+
+.item label {
+  font-size: 15px;
+}
+
+.item label[for="quantity"] {
+  padding-left: 4px;
+}
+
+.checkout-form-container {
+  margin-top: 10px;
+  margin-left: 90px;
+  padding: 5px 20px 15px 20px;
+  width: 848px;
+  border: 1px #ccc solid;
+}
+
+.column-main {
+  width: 392px;
+  height: auto;
+  padding: 0px 16px;
+}
+
+.column {
+  float: left;
+}
+
+.column-main h3 {
+  font-size: 20px;
+  margin: 20px 0px;
+}
+
+.checkout-form-container label {
+  color: #2170cc;
+  font-size: 17px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.column-main input[type="text"],
+.column-main input[type="email"] {
+  width: 365px;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.column-in {
+  width: 180px;
+  padding: 0px 16px;
+  float: left;
+}
+
+.column-in input[type="text"],
+.column-in input[type="email"] {
+  width: 155px;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.checkout-form-container .icon-container {
+  padding: 7px 0px;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #2170cc;
+  color: white;
+  padding: 8px;
+  margin: 20px 0px;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/* The below CSS code is for nav bar and footer*/
+.logo {
+  height: 70px;
+  width: 125px;
+  text-align: center;
+  padding-left: 100%;
+}
+
+nav {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 3px 3px 5px rgb(0, 0, 0, 50%);
+}
+
+nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav li {
+  list-style-type: none;
+  height: 50px;
+}
+
+nav a {
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
+  background-color: rgb(255, 255, 255);
+}
+
+nav a:hover {
+  color: white;
+  background-color: rgb(33, 112, 204, 80%);
+}
+
+nav li:first-child {
+  margin-right: auto;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rgb(255, 255, 255);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgb(0, 0, 0, 30%);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.sidebar li {
+  width: 100%;
+}
+.sidebar a {
+  width: 100%;
+}
+
+.menu-button {
+  display: none;
+}
+
+@media (max-width: 1175px) {
+  .hideOnMobile {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+  }
+}
+
+@media (max-width: 400px) {
+  .sidebar {
+    width: 100%;
+  }
+}
+
+.footer {
+  background-color: white;
+  box-shadow: 3px -3px 5px rgb(0, 0, 0, 50%);
+  clear: both;
+  text-align: right;
+  padding-right: 80px;
+}
+
+.footer a {
+  color: black;
+  text-decoration: none;
+}
