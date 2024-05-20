@@ -1,0 +1,138 @@
+/* Add your styles here */
+
+*{
+  font-family: Arial, sans-serif; /* Set a background color for the entire body */
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  width: 99.3%;
+  min-height: 98.5vh;
+  background: linear-gradient(30deg,#0C8CE9, #ffffff);
+  padding:10px;
+}
+
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #edeef0;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 40px;
+}
+
+input{
+  flex:1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+  font-size: 30px;
+}
+
+button{
+  border: none;
+  outline: none;
+  padding: 16px 50px;
+  background: #0C8CE9;
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+  border-radius: 40px;
+}
+.todo-app{
+  width: 100%;
+  max-width: 750px;
+  background-color: #fff;
+  margin: 150px auto 20px;
+  padding: 50px 30px 70px;
+  border-radius: 10px;
+}
+
+.todo-app h1{
+  font-size: 60px;
+  color: #002765;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.circle-button {
+  background-color: #fff;
+  border: 3px solid #0C8CE9;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  line-height: 18px;
+  font-weight: bold;
+  margin-right: 15px;
+  vertical-align: middle;
+  margin-left: 100px;
+  margin-bottom: 30px;
+}
+
+.task-text {
+  font-size: 35px;
+  display: inline-block;
+  line-height: 18px;
+  vertical-align: middle;
+  margin-bottom: 30px;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li:hover .circle-button {
+  background-color: #0C8CE9;
+}
+
+li:hover .task-text {
+  color: #555;
+  text-decoration: line-through;
+  text-decoration-color: #0C8CE9;
+  cursor: pointer;
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.notification {
+  animation: 200ms ease-out 0s 1 slideInFromRight;
+  position: fixed;
+  top: 50px; /* Change from bottom to top */
+  right: 40px; /* Change from left to right */
+  padding: 25px 50px;
+  font-size: 30px;
+  text-align: center;
+  background-color: #0C8CE9; /* Red */
+  color: white;
+  opacity: 1;
+  z-index: 1000; /* Ensure it appears above other elements */
+  width: auto; /* Let the width adjust based on content and padding */
+  height: auto; /* Let the height adjust based on content and padding */
+  border-radius: 25px; /* Increase border radius for more rounded edges */
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  transition: all 0.3s ease 0s; /* Add a transition for smooth fading */
+  line-height: 25px; /* Adjust line height to vertically center text */
+  letter-spacing: 1px; /* Increase letter spacing */
+}
+
